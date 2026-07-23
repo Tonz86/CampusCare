@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusCare - Sistem Layanan Kesehatan Mahasiswa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0a23, #1a1a3e);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            text-align: center;
+            background: rgba(255,255,255,0.05);
+            padding: 50px 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+        }
+        .logo {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #4CAF50, #00BCD4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #aaa;
+            margin-bottom: 30px;
+        }
+        .tech-stack {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .tech {
+            background: rgba(255,255,255,0.1);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: inline-block;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: white;
+        }
+        .btn-secondary {
+            background: rgba(255,255,255,0.15);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.85em;
+            color: #666;
+        }
+        .footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .status-badge {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 4px 16px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🏥</div>
+        <h1>CampusCare</h1>
+        <p class="subtitle">Sistem Layanan Kesehatan Mahasiswa</p>
+        
+        <div class="status-badge">🚧 Dalam Pengembangan</div>
+
+        <div class="tech-stack" style="margin-top: 20px;">
+            <span class="tech">🐘 Laravel</span>
+            <span class="tech">🐘 PostgreSQL</span>
+            <span class="tech">📊 Chart.js</span>
+            <span class="tech">🔐 Google OAuth</span>
+            <span class="tech">🛡️ RBAC</span>
+        </div>
+
+        <p style="margin: 20px 0; color: #ccc; line-height: 1.6;">
+            Sistem pemesanan obat dan konsultasi medis online dengan 
+            fitur pengantaran ke kos. Dilengkapi dengan dashboard analitik 
+            dan proteksi keamanan (CSRF, SQL injection, rate limiting).
+        </p>
+
+        <div class="buttons">
+            <a href="https://github.com/Tonz86/CampusCare" target="_blank" class="btn btn-primary">
+                📂 Lihat Repository
+            </a>
+            <a href="#" class="btn btn-secondary">
+                🚀 Demo Segera
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>
+                Dibangun oleh <a href="https://github.com/Tonz86" target="_blank">Toni Akbar Sebastiansyah</a> 
+                &middot; 2025
+            </p>
+            <p style="margin-top: 5px; font-size: 0.8em;">
+                🛠️ Teknologi: Laravel &middot; PostgreSQL &middot; Chart.js &middot; Google OAuth
+            </p>
+        </div>
+    </div>
+</body>
+</html>
